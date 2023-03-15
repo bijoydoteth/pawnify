@@ -18,9 +18,14 @@ export default function Home({connectedAddress}: {connectedAddress: string}) {
         <div className='p-4 flex justify-center items-center'>
           <div>
             <p className='text-center text-3xl'> Welcome to Pawnify </p>
-            <div className='flex justify-center items-center'>
-              <Link href='/borrow' className='m-2 px-4 py-3 text-gray-600 bg-gray-50 border border-gray-50 focus:outline-none focus:bg-gray-100 hover:bg-gray-100 duration-100 cursor-pointer text-xl leading-3 font-normal'> Borrow </Link>
-              <Link href='/lend' className='m-2 px-4 py-3 text-gray-600 bg-gray-50 border border-gray-50 focus:outline-none focus:bg-gray-100 hover:bg-gray-100 duration-100 cursor-pointer text-xl leading-3 font-normal'> Lend </Link>
+            <p className='text-center text-2xl'> Your NFT Loan Aggregator </p>
+            <div className='my-5 flex flex-col justify-center items-center'>
+            <Link href='/collections' className='m-2 px-4 py-3 text-white bg-indigo-400 border border-gray-50 focus:outline-none focus:bg-gray-100 hover:bg-indigo-600 duration-100 cursor-pointer text-xl leading-3 font-normal'> Visit Collections </Link>
+              <div className='flex justify-center items-center'>
+                <Link href='/borrow' className='m-2 px-4 py-3 text-white bg-indigo-400 border border-gray-50 focus:outline-none focus:bg-gray-100 hover:bg-indigo-600 duration-100 cursor-pointer text-xl leading-3 font-normal'> Borrow </Link>
+                <Link href='/lend' className='m-2 px-4 py-3 text-white bg-indigo-400 border border-gray-50 focus:outline-none focus:bg-gray-100 hover:bg-indigo-600 duration-100 cursor-pointer text-xl leading-3 font-normal'> Lend </Link>
+              </div>
+              
             </div>
           </div>
         </div>
